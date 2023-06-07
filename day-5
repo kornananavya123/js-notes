@@ -1,0 +1,94 @@
+Doubts:
+
+// 1.ternary :
+let age = 30;
+let isHeEligibletovote = ( age > 18) ? 'yes he can vote' : 'no he can vote';
+
+// 2.arthermatic :
+
+// + , - , * , / , % 
+
+
+// Type - conversion :
+
+// Link: https://betterprogramming.pub/implicit-and-explicit-coercion-in-javascript-b23d0cb1a750
+
+
+// from one data type to another data :
+
+// implicit conversion:(js will take care)
+
+
+// implicit conversion:(js will take care)
+
+// + --> if we have add a number and string then  = string
+
+// -, * , / => number
+
+// let a = 12 + '12';
+
+// let b = '23' - 1;
+
+// console.log(typeof (a));
+// console.log(typeof (b));
+
+
+
+// explicit conversion: (we tell the js to cover inot particular type)\
+
+
+//Explicit Coercion
+//convert to  string
+//String()  -- number to string
+//Number ()
+//Boolean()
+let name = 123;
+
+let result = name;
+console.log(result);
+console.log(typeof (result));
+
+
+
+  // data type : 
+    null
+    undefined:
+
+
+Objects:
+
+link : https://www.w3schools.com/js/js_objects.asp
+
+//Object - talking about particular object more detail
+// storing related info of a specific object
+// {
+//     key : value
+// }
+
+let home = {
+    membercount:10,
+    isforRent: 'no'
+};
+
+
+//How to create object
+let student = {
+    name:'raju',
+    classNma :'10th',
+    id:'ssss',
+    marks:550,
+    isHePass:true
+}
+
+console.log(student);
+
+/// how to access particular key
+
+//using .
+console.log(student.classNma);
+
+//[]
+console.log(student['classNma']);
+
+
+

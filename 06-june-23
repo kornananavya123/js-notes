@@ -1,0 +1,82 @@
+BOM:
+
+BROWSER OBJECT MODEL: (U will talk to browser)
+
+Window Object
+Screen Object
+Navigator Object
+Location Object
+History Object
+Local Storage
+
+
+Window Object:
+
+it represents browser   window.
+
+all js gloabal objects , (var ) function will be under     window.
+
+ex: 
+
+window.innerWidth
+window.innerHeight
+
+window ---> Screen Object:
+
+
+availHeight
+: 
+1080
+availLeft
+: 
+-1920
+availTop
+: 
+-180
+availWidth
+: 
+1920
+
+
+window ---> Navigator Object:
+
+brower setting information - 
+
+like name of the browser , appname , cookieebaled or not
+
+
+window -- Location Object:
+url
+path
+host
+https or not
+
+History Object: handle the browser history:
+
+History.back()
+
+History.forward():
+
+
+Local Storage & session storage:
+way to store some information in the browser
+
+Local: 
+It keeps info forever untill u delete (either manually or using removeItem method)
+localstorage.setItem(key,value)
+localstorage.getItem(key)
+localstorage.removeItem(key)
+
+session
+It keeps info only till u close the window 
+sessionstorage.setItem(key,value)
+sessionstorage.getItem(key)
+sessionstorage.removeItem(key)
+
+
+
+Cookie:
+'How do remember if some connection loss happen'
+or how i know about user information ?
+Cookies are saved in name-value pairs like:
+document.cookie='name=test;expires=Thu, 06 Jun 2023 20:59:00'

@@ -1,0 +1,85 @@
+agenda:
+
+Function:
+
+what is Function
+
+how to create a function
+
+how to call a function
+
+how to pass the parameters to the function
+
+how we cann get result from the function
+
+
+Function:
+
+set of resusable code - that we can use to perform some action
+
+
+Inbuild function:
+
+u dont need to do  any code or write statements -
+
+becoz its already written - predefined functions
+
+u just  to call the function wherever its required
+
+slice(), tostring();
+
+
+user defined function:
+
+function sum() {
+
+}
+
+
+function hoisting:
+
+function declarations are hoisted at the top
+
+
+
+
+
+
+//default parameters
+function sum(a=10, b=2) {
+
+  return a + b;
+}
+
+let result = sum(12 , 10);
+
+console.log(result);
+
+
+function sayHai(name='Raju', city='delhi') {
+  return 'hello ' + name + ' ' + city;
+}
+
+let res = sayHai('Naveen');
+
+console.log(res);
+
+
+practice:
+
+function myFunction() {
+  alert("Hello World!");
+}
+
+
+how u will call this function?
+
+function myFunction() {
+ 
+}
+
+let ans = myFunction('india')
+
+console.log(ans);
+
+link material: https://www.w3schools.com/js/js_functions.asp

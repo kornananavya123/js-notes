@@ -1,0 +1,130 @@
+agenda:
+
+1.switch (control flow)
+//switch() case:
+let MENU = 'ROTI'
+switch(MENU){
+case 'DOSA':
+
+    console.log('YES available');
+    break;
+case 'IDLY':
+    console.log('YES available');
+    break;
+default:
+    console.log('NO ');
+}
+
+
+
+
+2.operator:
+
+let name = 'test';
+
+Arithmetic Operators
++ 
+-
+*
+/
+%
+++
+--
+//arthermatic operator
+// operator operates the oprands
+//B>O>D>M>A>S
+let add = 18;
+
+++add; //pre-increment 1 --< var - exe
+
+add++ //post increment var + 1
+
+console.log(add)
+console.log(++add)
+console.log(add)
+
+
+Assignment Operators
+
+
+let a = 10;
+a+=1/// a=a+1;
+
+console.log(a);
+
+Comparison Operators
+
+//Comparison Operators
+
+
+1 > 0 // true
+
+1 == '1' // true
+
+1 === 1 //true
+
+'1' === 1 //true
+
+100 <= 100 //
+
+
+ 2 != 1 //
+
+if( a > b){}
+
+
+Logical Operators
+
+                //Logical Operators
+                // &&	and
+                // || or
+                // ! not
+
+                // &&	and
+                // true && true && T = true
+
+                // false && true = false
+
+
+                // console.log( (1 === 1) && (20===2) && ( 1 > 0) && (23 < 20))
+
+                // || or
+
+
+                // true || true = true
+
+                // false || true = true
+
+                // false || false = false
+                let a = 10;
+                let b = 20;
+                // console.log( (a === b) || (c===d))
+
+                //!
+
+                !true ---> false
+
+                !false ---> true
+
+                console.log( !((1 === 1) && (2===2) && ( 1 > 0) && (23 > 20)))
+
+Conditional (Ternary) Operator:
+
+() ? true : false
+
+
+practice:
+
+
+1.operator - https://www.w3schools.com/js/js_operators.asp
+2.switch https://www.w3schools.com/js/js_switch.asp
+
+
+
+// ternary operator assign the value to the variable based true or false condition
+
+
+let urname = 'Raju'
+
+let age =  (100 > 15) ? urname : 'ssssss';
+console.log(age)

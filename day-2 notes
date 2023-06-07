@@ -1,0 +1,60 @@
+//DAY-2 agenda:
+//Basic rewise (From Day 1):
+//JS handles all the controls in the website 
+   // -how brain is to the human body 
+   // -how human Control the car
+//Doubts related to  Variable and data type- 
+//------------------------------------------------------------------------------------------------
+//Q&A:
+//VAR:
+// var -
+    // U can redeclare same variable again is possible
+    // u can reassign same variable again
+var name1 = 'water';
+console.log(name1);//water
+name1 = 'soda';
+console.log(name1); //soda
+name1= 'milk' // reassign same variable
+console.log(name1);//milk
+//let and const -2015 - block scope variables
+    // redeclaration not supported on same scope
+    //  redeclaration is supported on block scope variables
+    //reassignment is accepeted in let
+    // reassignment is not possible in const
+ //global variable - gloabal scope
+ //const name2 = 'juice';
+ console.log(name2);
+
+
+
+
+ //Datatype - what type of data u are storing
+
+//string - 'name' - ur name , address 
+//number - 122222222 = ex- phone number ,adhar num
+//boolean- true or false
+//object - {} group of related item
+//array - [] - collection related value
+
+let tyre = 'dddddd'
+let phnum = 1234568;
+let isTodayMonday = false;
+
+let student = {
+    name:'name',
+    color:'red',
+    owner:'sss'
+}
+
+let marks = [100,200,300,400]
+
+
+ //Hositing ----------------------------------------------------------------
+
+            //: moving declarations to the top.
+           // : only applicable for var 
+{
+    const name2 = 'juice';
+    console.log(name2);
+}
+console.log(name2);

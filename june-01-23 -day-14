@@ -1,0 +1,164 @@
+EVENTS:
+
+keypress
+
+click
+load
+
+pageload:
+
+In HTML how to add events attr:
+event attribute: onload , onclick , onchange
+<body onload="createPara(5)" id="parent">
+
+event handler: perform tasks when action fires
+-------------------------
+how to add evenrts using JS:
+
+let btn = document.getElementsByClassName('btn')
+btn[0].onclick = createPara
+
+btn[0].onclick = createPara
+
+with param:
+
+let btn = document.getElementsByClassName('btn')
+btn[0].onclick = function () {
+    createPara(4)
+}
+
+--------------------------------------------------
+Event listeners: will observe events and if sepcif event is match the execution statrs
+
+let btn = document.getElementsByClassName('btn')
+btn[0].addEventListener('click',createPara)
+
+diff b/w handler and lister
+
+with event handler:u can add only one event
+with    lister: u can add same event multiple times:
+
+            Event probagation: way of defining the event order (in out or out -in ) 
+            addEventListener('click',createPara)
+                1.Bubbling:
+                by default
+                innerelemt to outer element
+                if no third param then bubble will happen or if u send false
+                
+                2.capture : true u have to pass as 3rd arg
+                it out to in 
+
+
+links:
+https://www.w3schools.com/js/js_htmldom_events.asp
+https://www.w3schools.com/js/js_htmldom_events.asp
+
+
+code :HTML
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     <link href="./mycss.css" rel="stylesheet" type="text/css" media="all"/>   
+     <style>
+      #myDiv1, #myDiv2 {
+        background-color: coral;
+        padding: 50px;
+      }
+      
+      #myP1, #myP2 {
+        background-color: white; 
+        font-size: 20px;
+        border: 1px solid;
+        padding: 20px;
+      }
+      </style>
+    </head>
+
+    <body >
+
+      <h2>JavaScript addEventListener()</h2>
+      <div id="myDiv11"> yellow
+        <div id="myDiv1">
+          <h2>Bubbling:</h2> orange
+          <p id="myP1">white</p>
+        </div><br>
+      </div>
+   
+      
+      <div id="myDiv2">
+        <h2>Capturing:</h2> orange
+        <p id="myP2">white</p>
+      </div>
+    
+      <script src="script.js"></script>
+      </body>
+  
+</html>
+
+----------------
+
+js:
+
+
+// let btn = document.getElementsByClassName('btn')
+// // btn[0].onclick = function () {
+// //     console.log('1')
+// // }
+
+// // btn[0].onclick = function () {
+// //     console.log('2')
+// // }
+// btn[0].addEventListener('click',function(){
+//     console.log('1')
+// })
+// btn[0].addEventListener('click',function(){
+//     console.log('2')
+// })
+
+
+// btn[0].addEventListener('click',function(){
+//     console.log('3')
+// })
+
+
+
+// btn[0].addEventListener('click',function(){
+//    alert('ssss')
+// })
+
+
+
+// function createPara(num){
+// for(let i=0; i<= num;i++){
+//     let para = document.createElement('p');
+// para.innerHTML = 'Hello every one';
+// document.body.appendChild(para)
+// }
+// }
+
+//bubble 
+document.getElementById("myP1").addEventListener("click", function() {
+    alert("You clicked the white element!");
+  });
+  
+  document.getElementById("myDiv1").addEventListener("click", function() {
+    alert("You clicked the orange element!");
+  });
+
+  document.getElementById("myDiv11").addEventListener("click", function() {
+    alert("You clicked the yellow element!");
+  });
+  
+  document.getElementById("myP2").addEventListener("click", function() {
+    alert("You clicked the white element!");
+  }, true);
+  
+  document.getElementById("myDiv2").addEventListener("click", function() {
+    alert("You clicked the orange element!");
+  }, true);
+
+  document.getElementById("myDiv0").addEventListener("click", function() {
+    alert("bodyyyy!");
+  }, true);

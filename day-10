@@ -1,0 +1,105 @@
+Q&A
+
+practice : https://contactmentor.com/js-function-exercises-solution/
+
+
+// /.Write a function that tells u given nuber is odd or even
+
+//if
+
+
+
+function oddoreven(a){
+    let ab = (a%2 === 0) ? 'even ' + a : 'odd';
+    return ab;
+    
+}
+
+let ans = oddoreven(26)
+console.log(ans)
+
+
+Funtion ... cont:
+
+Functions expression:
+
+
+//function expression: are not hoisted
+
+sum(); //function call
+const sum = function (){ 
+    console.log('hai')
+}
+add()
+// only function declarations are hoisted at the top level
+function add() {
+
+}
+
+
+//param vs argument
+
+
+function add(q,e,r){//(params)
+console.log(arguments)
+}
+
+add(1,2,3)//(arguments)
+
+
+
+
+
+
+
+
+
+Object cont...
+
+
+how to access and update object:
+const student = {
+    roll:'sss',
+    mark:340
+}
+
+//update the object properties
+// using . operator
+student.mark=500
+
+// if u add the property which does not there then it will
+// sit in the object as one of the property
+student.area='delhi';
+console.log(student.city)
+console.log(student)
+
+how to  create:
+
+using object literal;
+----------------------------------------------------------------
+        const student = {
+            roll:'sss',
+            mark:340
+        }
+
+using new keyword:
+----------------------------------------------------------------
+const student = new Object();
+
+object.create() ------
+----------------------------------------------------------------
+const student = {
+    name:'1'
+}
+
+const student2 = Object.create(student);
+
+
+console.log(student2.name)
+
+
+practice online:
+
+function :https://www.w3schools.com/js/js_function_definition.asp
+
+object: https://www.w3schools.com/js/js_object_definition.asp

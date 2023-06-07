@@ -1,0 +1,84 @@
+DAY-1 ----------------------------------------------------------------
+
+Introduction
+
+javascript file u must save with .js extension
+javascript is case sensitive
+
+Html file how to insert js CODE :
+    1.Using script tag :
+
+        <script>
+        //your js code
+        </script
+
+    2.external script
+
+        <script src="./myfile.js"></script>
+
+javascript can change HTML and CSS dynamically;
+
+Can do events (click , key press etc)
+
+sending  and receiving  data to server:
+
+storing the clinet data:
+
+Practice where :
+VS CODE , 
+browser console .
+
+Variables :
+---------------------------
+
+Its a container to hold some data that can be used by the program
+
+
+
+How tp decalre a Variable:
+
+var yourvar name  = yourvale
+
+var
+----- after 2015 
+let
+const
+
+
+// var 
+
+// u can reassign and redeclare 
+
+//redclare
+var totals = '123';
+var totals = 'wwww'
+//reassign
+var totals = '123';
+totals = 'wwww'
+
+
+// let  
+
+// u can not redeclare in same scope
+// but u can redeclare in different scope
+// but u can reassign 
+
+
+// const   
+
+// u cannot do reassign
+// u can redeclare in different scope
+
+
+
+Data type :-------
+
+number - 12233
+string - 'sdddd'
+boolean - true/false
+array -  []
+object - {}
+
+imp link :
+https://www.w3schools.com/js/js_variables.asp
+https://www.w3schools.com/js/js_datatypes.asp

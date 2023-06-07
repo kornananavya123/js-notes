@@ -1,0 +1,93 @@
+Agenda:
+
+// foreach and map discussion
+
+//for each (_)
+// will not retuen new array ok
+// let classroom = [100,200,300,400,125,116]
+
+// let res = [];
+// classroom.forEach(somefun)
+
+// function somefun(val,index,wholearray){
+ 
+//     res.push(val)
+// }
+// console.log('res',res)
+//map
+//map will return new array with updated values
+let classroom = [100,200,300,400,125,116]
+let newArray =classroom.map(mapfun)
+ function mapfun(val,index,wholearray){
+    if(100 >=250){
+        return  val + 50;
+    }else{
+        return 100 - 10;
+    }
+}
+console.log('old',classroom)
+console.log('newArray',newArray)
+
+
+
+
+
+// DOM - Documentation Object model
+
+//Introduction to DOM
+
+//Javascript can control html and css via Document Object
+
+//js can change html Element, attrbute ,css styles (Add or removed)
+
+//document is a inbuild object that has access to htmla and css
+// its arrange the items in the tree format:
+
+// DOM manipulation :
+
+// moveing or adding or deleting
+
+// DOM provide methoads to traverse inside the document object or tree :
+
+
+// The getElementById Method:
+
+//DOM
+// The getElementById Method:
+// it will return u a element with given id
+// once u get the elemnt u can access inside proper
+ 
+//or
+
+//innerHTML - content of the element
+
+//  /* const a = document.getElementById('harish') // single element
+
+//  class name */
+
+// const b = document.getElementsByClassName('ragav')
+
+// console.log(b[1])
+
+
+//tagname
+// const c = document.getElementsByTagName('li')
+
+// console.log(c)
+
+
+//query selector
+//The querySelector() method returns the first element that matches a CSS selector.
+const d = document.querySelector('body .child') // 1 item
+const dq = document.querySelectorAll('body .child') // all matching item
+
+console.log(dq)
+
+
+practice:
+// below methoads and ready to ans live question 
+document.getElementById
+document.getElementsByClassName
+document.getElementsByTagName
+document.querySelector
+document.querySelectorAll

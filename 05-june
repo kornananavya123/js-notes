@@ -1,0 +1,129 @@
+// Agenda:
+
+// Assignmnet discussion:
+
+
+// string literal (template literal):
+
+// 'THIS MY NAME'  - between normal quotes 
+
+// u cant pass dynamic value
+
+// string literal:
+// u can pass dynamic value
+// `string value` - between back tick
+
+// `ur whatever str value ${ur Variable}`
+
+
+new way to build html in dom.
+
+// let newHtml = `<div class="card">
+  // <img src=${val.preview}>
+ // <div class="details">
+   //   <h1>${val.name}</h1>
+   //   <h2>${val.name}</h2>
+   //   <p>${val.price}</p>
+ // </div>
+ // </div>`
+
+
+// arrow funtion:
+
+// arrow function:
+
+// same as regular function expression but syntax will differ and this value inside 
+// arrow function will behave differently according to the call
+
+
+// const arrowfun = () => {
+ //  console.log('sssss')
+// }
+
+// arrowfun()
+
+
+
+// array methoad (reduce ,some , every):
+
+// forEach
+
+
+
+// map
+
+// some
+
+// every
+
+// reduce
+
+//forEach()
+//will not return new array
+//just will go through the each item in the array
+let list = [1,2,3,4,5]
+const newarr =[]
+list.forEach(function(val,index,arr){
+  newarr.push(val)
+})
+
+
+//map
+// It will also go through each item in the array and perform some update //
+// to that item and return the new array
+
+// return new array with updated values
+let list1 = [101,99,113,94,55]
+const newmap =list1.map(function(val,index,arr){ //[111,89,123,84,45]
+  if(val >100){
+    return val + 10;
+  }else{
+    return val - 10;
+  }
+})
+
+
+//console.log(newmap);
+
+//every()
+//return true if all item match the condition
+//even one item fails then return false
+
+let age = [119,19,19,20,91];
+
+const halltic = age.every(function(val,index){
+  
+    return val > 18;
+})
+
+
+
+//some()
+//if any one item is passed or true the
+//it will return true;
+
+let age1 = [19,19,19,20,9];
+
+const resut1 = age1.some(function(val,index, arr){
+
+    if(val > 10){
+
+    }
+})
+
+
+
+// console.log(resut1);
+
+
+//reduce:[1,2,3,4,5] => 15
+const total = [99,78,67,89,45]
+
+
+const res = total.reduce(function(acc,val,index,arr){
+  console.log(acc,val,index,arr)
+  return acc + val
+})
+
+console.log(res);
+

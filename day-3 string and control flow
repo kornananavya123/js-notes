@@ -1,0 +1,102 @@
+//Agenda:
+
+
+//Data type:
+
+//1.String
+//2.number
+//3.boolean
+//4.array
+//5.object
+
+//1.Data type Strings
+
+//methoad: predefined rule - that will give us result based on our input
+
+length
+toUpperCase()
+toLowerCase()
+
+//strings
+
+let myname = 'this is my name12';
+// to find the length of the string
+console.log(myname.length)
+
+//to make uppercase and lowercase
+console.log(myname.toUpperCase())
+let name1 = 'WWWWWWW HAI HEELO';
+console.log(name1.toLowerCase());
+
+//trim  - to remove leading and trailing whitespace
+let text = '      hey how are you hello          ';
+console.log(text.trim());
+
+console.log(text.trimStart());
+
+
+console.log(text.trimEnd());
+
+// concat - adding a string into another string
+let text1 = 'hellow good';
+console.log(text1.concat(' Morning'));
+
+
+//charAt()
+
+// console.log(text1.charAt(5));
+
+// console.log(text1.charCodeAt(5));
+
+
+//slice
+let text2 = '123456789';
+
+let result = text2.slice(-12,-4);
+console.log(result);
+
+let result1 = text2.substring(2,7);
+
+console.log(result1);
+
+
+let result3 = text2.substr(2, 5);
+
+console.log(result3);
+
+
+//imp links
+
+https://www.w3schools.com/js/js_string_methods.asp
+https://www.w3schools.com/js/js_string_search.asp
+
+
+
+
+//Control flow:
+  //  how ur code execution happens based on the varibales or some oprators
+//conditional statements - true/false 
+
+//we take some decision based on the two or more variable
+
+  //  if , if-else , else-if
+
+
+    let mark = 501; /// assume the u are getting input here
+
+//condition true theh if block is executed
+// if condition false then else eexcute
+if(mark <= 400){
+console.log("C")
+}else if(mark <= 450){
+    console.log("b")
+}else if(mark <= 475){
+    console.log("a")
+}else{
+    console.log("not in condition")
+}
+ 
+
+
+
+
